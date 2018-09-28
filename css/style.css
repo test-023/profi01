@@ -1,0 +1,385 @@
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url('ralewayextralight.woff2') format('woff2'), url('ralewayextralight.woff') format('woff'), url('ralewayextralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway Light'), local('Raleway-Light'), url('ralewaylight.woff2') format('woff2'), url('ralewaylight.woff') format('woff'), url('ralewaylight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway Regular'), local('Raleway-Regular'), url('ralewayregular.woff2') format('woff2'), url('ralewayregular.woff') format('woff'), url('ralewayregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway Medium'), local('Raleway-Medium'), url('ralewaymedium.woff2') format('woff2'), url('ralewaymedium.woff') format('woff'), url('ralewaymedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway Bold'), local('Raleway-Bold'), url('ralewaybold.woff2') format('woff2'), url('ralewaybold.woff') format('woff'), url('ralewaybold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+}
+header{
+    background-color: #ffffff;
+}
+.logo{
+    padding: 10px;
+    margin-left: 110px;
+}
+footer{
+    background-color: #e9e3db;
+    color: grey;
+}
+a{
+    text-decoration: none;
+    color: grey;
+}
+nav.top-menu__nav{
+    display: flex;
+}
+ul.top-menu{
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	width: 900px;
+    height: 36px;
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+}
+ul.top-menu>li {
+	float: left;
+	list-style: none;
+	position: relative;
+}
+ul.top-menu>li>a {
+	color: #000000;
+	display: block;
+	padding: 8px 20px 10px;
+	text-decoration: none;
+}
+ul.top-menu>li>a:hover {
+    border-bottom: 2px solid #ac242a;
+    color: #ac242a;
+}
+ul.top-menu>ul>li {
+    position: absolute;
+    min-width: 270px;
+    background-color: #ffffff;
+    box-shadow: 0 0 8px 0 rgba(213, 213, 213, 0.5);
+    display: none;
+    list-style: none;
+}
+ul.submenu{
+    display: none;
+}
+ul.top-menu>li>ul:hover {
+	display: block;
+	position: absolute;
+	top: 36px;
+	border-radius: 0 0 4px 4px;
+	background-color: #2b2b2b;
+}
+ul.top-menu>li:hover>ul>li {
+	float: none;
+	width: 150px;
+	list-style: none;
+}
+ul.top-menu>li:hover>ul>li>a {
+	border-top: 1px solid #4f4f4f;
+	padding: 6px 20px 8px;
+	display: block;
+	color: white;
+	text-decoration: none;
+}
+ul.top-menu>li:hover>ul>li>a:hover {
+	background-color: transparent;
+	color: #c1deff;
+}
+.company{
+    height: 345px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding-top: 25px;
+}
+.company__01{
+    width: 300px;
+}
+.company-title{
+    color: #4a4a4a; 
+    padding-left: 470px;
+    position: relative; 
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.company-red{
+    color: #ac242a;
+}
+.company-red__big{
+    color: #ac242a;
+    font-size: 35px;
+    padding:    5px;
+    font-family: 'Raleway', sans-serif;
+}
+.company-flex{
+    display: flex;
+}
+.company--big__after,
+.company--big__after01,
+.company--big__after02,
+.company--big__after03{
+    width: 110px;
+    display: inline-block;
+    font-size: 12px;
+    padding-top: 11px;
+}
+.company--big__after01{
+    width: 150px;
+    padding : 15px;
+}
+.company--big__after02{
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.company--big__after03{
+    padding-left: 10px;
+}
+.company__02{
+    padding-right: 120px;
+}
+.company__02--width{
+    width: 220px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.company-comand{
+    font-size: 12px;
+    line-height: 0.7em;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-right: 70px;
+    padding-top: 35px;
+}
+.news{
+    background-color: #ac242a;
+    width: 100%;
+    padding-bottom: 5%;
+    padding-bottom: 90px;
+}
+.news-block,
+.news-block1,
+.news-block2,
+.news-block3 {
+    width: 300px;
+}
+.news-block2{
+    margin-left: 88px;
+    margin-right: 88px;
+}
+
+.news-block__info{
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size:11px;
+    line-height: 1.7;
+}
+.news-allnews{
+    color: #9C9A9A;
+    padding-left: 40px;
+    padding-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+.news-title{
+    color: #ffffff;
+    text-transform:uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.news-block__title{
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.news-block__date{
+    color: #9C9A9A;
+    margin-top: 20px;
+}
+.container{
+    min-width: 1200px;
+}
+.container-news__title{
+    margin-left: 120px;
+    display: flex;
+    padding-top: 60px;
+}
+.container-01{
+    display: flex;
+    margin-left: 120px;
+    bottom: 50px;
+    position: relative;
+}
+.container-02{
+    display: flex;
+    margin-left: 120px;
+}
+.container-03{
+    display: flex;
+    padding: 50px;
+    margin-left: 70px;
+}
+.slider{
+}
+.slider-top{
+    background-color:#e8e8e8;
+    height:425px;
+}
+.slider__text{
+    position: absolute;
+    font-size: 30px;
+    color: #AC242A;
+    width: 550px;
+    text-transform: uppercase;
+    padding-top: 175px;
+    padding-bottom: 155px;
+    margin-left: 122px;
+}
+.slick-slide{
+    min-height: 360px !important;
+}
+.slick-slide img{
+    margin-right: 225px;
+    margin-top: 70px;
+}
+.slider-img__01{
+    margin-left: 450px;
+    margin-top: 28px;
+    margin-right: 34px;
+    width: 600px;
+    height: 250px;
+}
+.slick-dots li button{
+    border: 0;
+    background: grey;
+}
+.footer-info{
+    margin: 0 0 0 auto;
+    padding-right: 106px;
+}
+.footer-contact{
+    margin-left: 71px;
+}
+/*------------------------------------*\
+	НАВИГАЦИЯ
+\*------------------------------------*/
+#nav{
+	float:left;
+	width:100%;
+	list-style:none;
+	font-weight:bold;
+    margin-bottom:10px;
+    display: flex;
+    padding-left: 425px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+#nav li{
+	float:left;
+	position:relative;
+    display:block;
+    color: #000000;
+}
+#nav li:hover{
+    color: #000000;
+}
+ul#nav li a{
+	display: block;
+	padding: 10px;
+    color: #000000;
+	text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+ul#nav li a:hover{
+    color: #ac242a;
+}
+
+/*--- ВЫПАДАЮЩИЕ ПУНКТЫ ---*/
+#nav ul{
+	list-style:none;
+	position:absolute;
+	left:-9999px; /* Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
+	opacity:0; /* Устанавливаем начальное состояние прозрачности */
+    -webkit-transition:0.25s linear opacity; /* В Webkit выпадающие пункты будут проявляться */
+    box-shadow: 0 0 8px 0 rgba(213, 213, 213, 0.5);
+    background: #ffffff;
+    z-index: 1;
+    top: 45px;
+}
+.submenu-top{
+    margin-top: 20px;
+}
+.submenu-bottom{
+    margin-bottom: 20px;
+}
+#nav ul li{
+	/* Вводим отступ между li чтобы создать иллюзию разделенных пунктов меню */
+    float:none;
+    color:#9C9A9A;
+    text-transform: none;
+    text-decoration: none;
+}
+#nav ul a{
+	white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
+    display:block;
+    padding: 5px;
+    text-transform: none;
+    text-decoration: none;
+    padding-right: 35px;
+}
+#nav li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
+	left: 0; /* Приносим его обратно на экран, когда нужно */
+    opacity: 1; /* Делаем непрозрачным */
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+#nav li:hover a{ /* Устанавливаем стили для верхнего уровня, когда выводится выпадающий список */
+	background:#ffffff;
+	background:rgba(255, 255, 255, 1); /* Выглядит полупрозрачным */
+    color: #ac242a;
+}
+#nav li:hover ul a{ /* Изменяем некоторые стили верхнего уровня при выводе выпадающего пункта */
+    text-decoration:none;
+    color: #9C9A9A;
+    text-transform: none;
+    font-size: 12px;
+    text-align: left;
+    padding-left: 14%;
+}
+#nav li:hover ul li a:hover{ /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
+	color: #737373;
+    border-bottom: none;
+    background-color: #F7F7F7;
+}
