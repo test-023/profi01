@@ -31,13 +31,14 @@
 body{
     font-family: 'Raleway', sans-serif;
     font-size: 13px;
+    margin: 0px;
 }
 header{
     background-color: #ffffff;
 }
 .logo{
     padding: 10px;
-    margin-left: 110px;
+    /* margin-left: 110px; */
 }
 footer{
     background-color: #e9e3db;
@@ -47,8 +48,23 @@ a{
     text-decoration: none;
     color: grey;
 }
+.sub-menu-001 {
+    display: none;
+    list-style: none;
+    text-align: center;
+    color: #ffffff;
+    font-size: 15px;
+}
+.sub-menu-001 a {
+    color: #ffffff
+}
+.sub-menu-001 li {
+    padding: 10px;
+}
 nav.top-menu__nav{
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 ul.top-menu{
     background-color: #ffffff;
@@ -116,13 +132,15 @@ ul.top-menu>li:hover>ul>li>a:hover {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     padding-top: 25px;
+    display: flex;
+    justify-content: center;
 }
 .company__01{
     width: 300px;
 }
 .company-title{
     color: #4a4a4a; 
-    padding-left: 470px;
+    text-align: center;
     position: relative; 
     font-size: 48px;
     font-family: 'Montserrat', sans-serif;
@@ -161,7 +179,7 @@ ul.top-menu>li:hover>ul>li>a:hover {
     padding-left: 10px;
 }
 .company__02{
-    padding-right: 120px;
+    margin-left: 50px;
 }
 .company__02--width{
     width: 220px;
@@ -173,14 +191,16 @@ ul.top-menu>li:hover>ul>li>a:hover {
     line-height: 0.7em;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    padding-right: 70px;
+    margin-right: 50px;
     padding-top: 35px;
+    margin-left: 25px;
 }
 .news{
     background-color: #ac242a;
     width: 100%;
-    padding-bottom: 5%;
     padding-bottom: 90px;
+    display: flex;
+    justify-content: center;
 }
 .news-block,
 .news-block1,
@@ -226,29 +246,38 @@ ul.top-menu>li:hover>ul>li>a:hover {
     margin-top: 20px;
 }
 .container{
-    min-width: 1200px;
+    /* min-width: 1200px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-04 {
+    display: none;
 }
 .container-news__title{
-    margin-left: 120px;
+    /* margin-left: 120px; */
     display: flex;
     padding-top: 60px;
 }
 .container-01{
     display: flex;
-    margin-left: 120px;
+    /* margin-left: 120px; */
     bottom: 50px;
     position: relative;
 }
 .container-02{
     display: flex;
-    margin-left: 120px;
+    /* margin-left: 120px; */
 }
 .container-03{
     display: flex;
-    padding: 50px;
-    margin-left: 70px;
+    margin-top: 50px;
+    margin-bottom: 60px;
 }
-.slider{
+.slider {
+}
+.slick-initialized .slick-slide{
+    display: flex !important;
+    justify-content: center;
 }
 .slider-top{
     background-color:#e8e8e8;
@@ -262,19 +291,18 @@ ul.top-menu>li:hover>ul>li>a:hover {
     text-transform: uppercase;
     padding-top: 175px;
     padding-bottom: 155px;
-    margin-left: 122px;
+    padding-right: 610px;
 }
 .slick-slide{
     min-height: 360px !important;
 }
 .slick-slide img{
-    margin-right: 225px;
     margin-top: 70px;
+    margin-right: 110px;
 }
 .slider-img__01{
     margin-left: 450px;
     margin-top: 28px;
-    margin-right: 34px;
     width: 600px;
     height: 250px;
 }
@@ -282,12 +310,30 @@ ul.top-menu>li:hover>ul>li>a:hover {
     border: 0;
     background: grey;
 }
+.footer-flex{
+    display: flex;
+    justify-content: center;
+}
+.footer-addres{
+    position: relative;
+    right: 165px;
+}
 .footer-info{
     margin: 0 0 0 auto;
-    padding-right: 106px;
+    padding-right: 135px;
+    left: 290px;
+    position: relative;
 }
 .footer-contact{
     margin-left: 71px;
+    right: 150px;
+    position: relative;
+}
+.header--flex {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 /*------------------------------------*\
 	НАВИГАЦИЯ
@@ -382,4 +428,912 @@ ul#nav li a:hover{
 	color: #737373;
     border-bottom: none;
     background-color: #F7F7F7;
+}
+
+/* хлебные крошки */
+.breadcrumbs {
+    margin: 0;
+    padding: 0; /* Убираем отступы */
+    padding: 20px;
+    margin-left: 90px;
+    font-size: 17px;
+    font-weight: 300;
+   }
+   .breadcrumbs li {
+    display: inline-block; /* Выстраиваем по горизонтали */
+   }
+   .breadcrumbs li::before {
+    content: '/'; /* Разделитель */
+    margin-left: 5px; /* Отступ слева */
+    margin-right: 5px; /* Отступ справа */
+    color: #7f7f7f; /* Цвет разделителя */
+   }
+   .breadcrumbs li:first-child::before {
+    content: ''; /* Убираем разделитель для первого пункта */
+   }
+.people{
+    background-color: #f9f9f9;
+}
+.people--white{
+    height: 160px;
+    background-color: #ffffff;
+}
+.people--container{
+    display: flex;
+}
+.people--pages{
+    width: 930px;
+    height: 614px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 11px 0 rgba(211, 211, 211, 0.5);
+    margin-left: 150px;
+    margin-top: -115px;
+    margin-bottom: 60px;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.avatar{
+    width: 356px;
+    height: 466px;
+    background-color: #d8d8d8;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 77px;
+}
+.people--skills{
+    margin-top: 110px;
+    margin-left: 500px;
+    position: relative;
+}
+.people__redline{
+    width: 667px;
+    border: solid 0.5px #ac242a;
+}
+.arrow-top {
+    padding-left: 625px; 
+}
+.arrow-bottom {
+    padding-left: 625px;
+}
+.people-info{
+    background-color: #f9f9f9;
+    width: 810px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-left: 255px;
+    font-size: 14px;
+    color: #353535;
+    margin-bottom: 60px;
+}
+.people__name{
+    font-weight: 600;
+    font-size: 25px;
+    width: 250px; 
+    color: #353535;
+}
+.people__email{
+}
+.people__language{
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 33px;
+}
+.people__rank{
+    width: 250px;
+}
+.command--title{
+    text-transform: uppercase;
+    color: #ac242a;
+    font-weight: 500;
+    font-size: 25px;
+    margin-left: 115px;
+    margin-bottom: 70px;
+    padding: 0;
+    margin-top: 0;
+}
+.company--people__info{
+    margin-left: 45px;
+}
+.company--block__comand{
+    background-color: #ffffff;
+    min-width: 353px;
+    height: 439px;
+    box-shadow: 0 2px 8px 0 rgba(206, 206, 206, 0.5);
+    margin-right: 75px;
+    position: relative;
+}
+.company--photo{
+    background-color: #d8d8d8;
+    width: 305px;
+    height: 344px;
+    position: relative;
+    margin-left: 48px;
+    top: -18px;
+}
+.company--people__name{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    width: 245px;
+}
+.company--people__rank{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.company--people__email {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.company--small__redline {
+    width: 28px;
+    border: solid 1px #ac242a;
+    background-color: #ac242a;
+}
+.company--block{
+    display: flex;
+    margin-left: 115px;
+}
+.contacts--container{
+    display: flex;
+}
+.contacts--title{
+    text-transform: uppercase;
+    color: #ac242a;
+    font-weight: 600;
+    font-size: 25px;
+    margin-left: 115px;
+    margin-bottom: 70px;
+    padding: 0;
+    margin-top: 0;  
+}
+.contacts--info {
+    margin-left: 185px;
+}
+.contact--yandexcart{
+    margin-left: 150px;
+}
+.news--press__title{
+    text-transform: uppercase;
+    color: #ac242a;
+    font-weight: 600;
+    font-size: 25px;
+    margin-left: 115px;
+    margin-bottom: 70px;
+    padding: 0;
+    margin-top: 0;
+}
+.news-press__block{
+    margin-left: 200px;
+}
+.news--press__list{
+    list-style: none;
+    font-size: 16px;
+}
+.news--press__list li {
+    padding-bottom: 20px;
+    margin-left: 80px;
+
+}
+.news--press__list li a {
+    color: grey;
+}
+.news--press__list :hover{
+    color: black;
+}
+.news-press__date {
+    color: #9C9A9A;
+    font-size: 16px;
+}
+.news-press__newstitile a {
+    color: #000000;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.news-press__newstitile a:hover{
+    color: #ac242a;
+    border-bottom: 2px solid #ac242a;
+}
+.greyline{
+    width: 733px;
+    border: solid 0.5px #dcdcdc;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+.news-press__container{
+    display: flex;
+}
+.practices__title{
+   text-transform: uppercase;
+   color: #ac242a;
+   font-weight: 600;
+   font-size: 25px;
+   margin-left: 115px;
+   margin-bottom: 70px;
+   padding: 0;
+   margin-top: 0;
+}
+.practices__container{
+    max-width: 1200px;
+    margin-left: 120px;
+}
+.practices__block{
+    width: 489px;
+    height: 232px;
+}
+.practices__block:hover{
+    background-color: #ffffff;
+    box-shadow: 0 2px 9px 0 rgba(181, 181, 181, 0.5);
+}
+.redline-left{
+    width: 8px;
+    height: 59px;
+    background-color: #ac242a;
+    position: relative;
+    top: 37px;
+    right: 4px;
+}
+.practices--container{
+    left: 55px;
+    position: relative;
+    bottom: 60px;
+}
+.practices--subtitletitle{
+    width: 410px;
+}
+.practices--subtitletitle a {
+    font-size: 30px;
+    font-weight: 600;
+    width: 410px;
+    color: #353535;
+}
+.practices--description{
+    color: #7A7A7A;
+    font-size: 16px;
+}
+.info--company__section{
+    font-size: 20px;
+    margin-left: 100px;
+}
+.info--company__easy {
+    font-weight: 400;
+}
+.info--company__grey {
+    font-weight: 500;
+    color: grey;
+}
+.info--company__black{
+    list-style: none;
+    margin-top: 25px;
+}
+.info--company__black li{
+    margin-bottom: 25px;
+}
+.info--company__bold {
+    font-weight: 600;
+}
+.info--company__date{
+    font-size: 25px;
+    color: grey;
+}
+.doveryy--box{
+    width: 401px;
+    height: 480px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 7px 0 rgba(159, 159, 159, 0.5);
+    margin-left: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.doveryy--box__img{
+    width: 285px;
+    height: 212px;
+    border: solid 1px grey;
+    margin-left: 52px;
+}
+.doveryy--box__title{
+    margin-left: 50px;
+    font-size: 17px;
+}
+.doveryy--box__description{
+    margin-left: 50px;
+    font-size: 15px;
+}
+.obzac,
+.obzac2{
+    display: none;
+}
+/* Кнопки */
+.cd-pagination {
+    width: 90%;
+    max-width: 768px;
+    margin: 2em auto 4em;
+    text-align: center;
+}
+
+.cd-pagination li {
+    /* hide numbers on small devices */
+    display: none;
+    margin: 0 .2em;
+}
+
+.cd-pagination li.button {
+    /* make sure prev next buttons are visible */
+    display: inline-block;
+    float: left;
+}
+
+.cd-pagination a,
+.cd-pagination span {
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* use padding and font-size to change buttons size */
+    padding: .6em .8em;
+    font-size: 1.6rem;
+}
+
+.cd-pagination a {
+    border-radius: 0.25em;
+}
+
+.no-touch .cd-pagination a:hover {
+    background-color: #f2f2f2;
+}
+
+.cd-pagination a:active {
+    /* click effect */
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.cd-pagination a.disabled {
+    /* button disabled */
+    color: rgba(46, 64, 87, 0.4);
+    pointer-events: none;
+}
+
+.cd-pagination a.disabled::before,
+.cd-pagination a.disabled::after {
+    opacity: .4;
+}
+
+.cd-pagination .button:first-of-type a::before {
+    content: '\00ab  ';
+}
+
+.cd-pagination .button:last-of-type a::after {
+    content: ' \00bb';
+}
+
+.cd-pagination .current {
+    /* selected number */
+    color: #000000;
+    pointer-events: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .cd-pagination li {
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+    .cd-pagination {
+        margin: 4em auto 8em;
+    }
+}
+
+/* -------------------------------- 
+
+No space - remove distance between list items
+
+-------------------------------- */
+.cd-pagination.no-space {
+    width: 700px;
+    max-width: none;
+    display: inline-block;
+    border-radius: 0.25em;
+    -webkit-padding-start: 0px;
+}
+
+.cd-pagination.no-space:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.cd-pagination.no-space li {
+    margin: 0;
+}
+
+.cd-pagination.no-space li:last-of-type {
+    border-right: none;
+    float: right;
+}
+
+.cd-pagination.no-space a,
+.cd-pagination.no-space span {
+    float: left;
+    border-radius: 0;
+    padding: .8em 1em;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 23px;
+    font-weight:600;
+}
+
+.cd-pagination.no-space li:first-of-type a {
+    border-radius: 0.25em 0 0 0.25em;
+    float: left;
+}
+
+.cd-pagination.no-space li:last-of-type a {
+    border-radius: 0 0.25em 0.25em 0;
+}
+
+/* -------------------------------- 
+
+move buttons - move prev and next buttons to the sides
+
+-------------------------------- */
+.cd-pagination.move-buttons:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.cd-pagination.move-buttons .button:first-of-type {
+    float: left;
+}
+
+.cd-pagination.move-buttons .button:last-of-type {
+    float: right;
+}
+
+.cd-pagination.no-space.move-buttons {
+    width: 90%;
+    max-width: 768px;
+    display: block;
+    overflow: hidden;
+}
+
+.cd-pagination.no-space.move-buttons li {
+    float: none;
+    border: none;
+}
+
+.cd-pagination.no-space.move-buttons a,
+.cd-pagination.no-space.move-buttons span {
+    float: none;
+}
+
+/* -------------------------------- 
+
+custom icons - customize the small arrow inside the next and prev buttons 
+
+-------------------------------- */
+.cd-pagination.custom-icons .button a {
+    position: relative;
+}
+
+.cd-pagination.custom-icons .button:first-of-type a {
+    padding-left: 2.4em;
+}
+
+.cd-pagination.custom-icons .button:last-of-type a {
+    padding-right: 2.4em;
+}
+
+.cd-pagination.custom-icons .button:first-of-type a::before,
+.cd-pagination.custom-icons .button:last-of-type a::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    /* set size for custom icons */
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    /* set margin-top = icon height/2 */
+    margin-top: -8px;
+    background: transparent url("../img/cd-icon-arrow-1.svg") no-repeat center center;
+}
+
+.cd-pagination.custom-icons .button:first-of-type a::before {
+    left: .8em;
+}
+
+.cd-pagination.custom-icons .button:last-of-type a::after {
+    right: .8em;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/* -------------------------------- 
+
+custom buttons - replace prev and next buttons text with a custom icon 
+
+-------------------------------- */
+.cd-pagination.custom-buttons a,
+.cd-pagination.custom-buttons span {
+    vertical-align: middle;
+}
+
+.cd-pagination.custom-buttons .button a {
+    /* set custom width */
+    width: 40px;
+    /* image replacement */
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 100%;
+    color: transparent;
+    background-image: url("../img/cd-icon-arrow-2.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.cd-pagination.custom-buttons .button:last-of-type a {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.no-touch .cd-pagination.custom-buttons .button:last-of-type a:active {
+    -webkit-transform: scale(0.9) rotate(180deg);
+    -moz-transform: scale(0.9) rotate(180deg);
+    -ms-transform: scale(0.9) rotate(180deg);
+    -o-transform: scale(0.9) rotate(180deg);
+    transform: scale(0.9) rotate(180deg);
+}
+
+.cd-pagination.no-space.custom-buttons .button:last-of-type a {
+    border-radius: 0.25em 0 0 0.25em;
+}
+
+/* -------------------------------- 
+
+animated buttons - animate the text inside prev and next buttons 
+
+-------------------------------- */
+.cd-pagination.animated-buttons a,
+.cd-pagination.animated-buttons span {
+    padding: 0 1.4em;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+}
+
+.cd-pagination.animated-buttons .button a {
+    position: relative;
+    padding: 0 2em;
+}
+
+.cd-pagination.animated-buttons .button:first-of-type a::before,
+.cd-pagination.animated-buttons .button:last-of-type a::after {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    right: auto;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+}
+
+.cd-pagination.animated-buttons .button:last-of-type a::after {
+    -webkit-transform: translateX(-50%) rotate(180deg);
+    -moz-transform: translateX(-50%) rotate(180deg);
+    -ms-transform: translateX(-50%) rotate(180deg);
+    -o-transform: translateX(-50%) rotate(180deg);
+    transform: translateX(-50%) rotate(180deg);
+}
+
+.cd-pagination.animated-buttons i {
+    display: block;
+    height: 100%;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+}
+
+.no-touch .cd-pagination.animated-buttons .button a:hover i {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.no-touch .cd-pagination.animated-buttons .button:first-of-type a:hover::before {
+    -webkit-transform: translateX(-50%) translateY(-50px);
+    -moz-transform: translateX(-50%) translateY(-50px);
+    -ms-transform: translateX(-50%) translateY(-50px);
+    -o-transform: translateX(-50%) translateY(-50px);
+    transform: translateX(-50%) translateY(-50px);
+}
+
+.no-touch .cd-pagination.animated-buttons .button:last-of-type a:hover::after {
+    -webkit-transform: translateX(-50%) rotate(180deg) translateY(50px);
+    -moz-transform: translateX(-50%) rotate(180deg) translateY(50px);
+    -ms-transform: translateX(-50%) rotate(180deg) translateY(50px);
+    -o-transform: translateX(-50%) rotate(180deg) translateY(50px);
+    transform: translateX(-50%) rotate(180deg) translateY(50px);
+}
+/* Гамбургер */
+.menu {
+    text-align: right;
+    margin-left: auto;
+    top: 15px;
+    position: relative;
+}
+
+.menu__icon {
+   display: none;
+   width: 45px;
+   height: 35px;
+   position: relative;
+   cursor: pointer;
+}
+
+.menu__icon span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 34px;
+  background: #333333;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.menu__icon span:nth-child(1) {
+  top: 0px;
+}
+
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+  top: 13px;
+}
+
+.menu__icon span:nth-child(4) {
+  top: 26px;
+ }
+
+.menu__links-item {
+    display: none;
+    color: #333333;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu__links-item:hover {
+    text-decoration: underline;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu.menu_state_open .menu__links {
+  display: block;  
+}
+.slider-top02{
+    display: none;
+}
+
+@media (max-width: 480px){
+.company-title {
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+.news {
+}
+.news-block__date {
+    margin-top: 40px;
+}
+.news-block__info {
+    display: none;
+}
+.container-03 {
+    left: 25px;
+    position: relative;
+}
+}
+@media screen and (max-width: 768px) {
+.menu__icon{
+    display: inline-block;
+}
+#nav{
+    display: none;
+}
+nav.top-menu__nav{
+    margin-right: auto;
+    margin-left: 0;
+}
+.menu__links {
+    position: fixed;
+    display: none;
+    top: 20px;
+    right: 0;
+    left: 0;
+    margin-top: 52px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    overflow: auto;
+}
+  
+.menu__links-item {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    color: #ffffff;
+}
+.container-01,  
+.container-02,
+.container-03,
+.container-04 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-01 {
+    display: none;
+}
+.container-03 {
+    display: none;
+}
+.container-04 {
+    display: block;
+    text-align: center;
+}
+.company--big__after01 {
+    margin-top: 55px;
+    position: relative;
+    right: 50px;
+    margin-left: 25px;
+}
+.company-red__big01 {
+    left: 105px;
+    position: relative;
+}
+.company-red__big02 {
+    position: relative;
+    left: 55px;
+}
+.company--big__after02 {
+    margin-top: 55px;
+    text-align: center;
+    right: 22px;
+    position: relative
+}
+.company--big__after03 {
+    margin-top: 55px;
+    position: relative;
+    right: 55px;
+}
+.footer-contact__h1 {
+    font-size: 15px;
+    padding: 10px;
+}
+.company {
+    display: block;
+}
+.company__01{
+    margin-left: auto;
+    margin-right: auto;
+}
+.company__02 {
+    width: 300px;
+    margin-left: 100px;
+}
+.company-comand {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 300px;
+    padding-top: 0;
+}
+.company-comand p {
+    padding: 5px;
+    line-height: 1.5;
+    font-size: 15px;
+}
+.company-title{
+    padding-left: 0px;
+    text-align: center;
+}
+.slider__text {
+    padding-right: 185px;
+    width: 200px;
+    text-align: center;
+    font-size: 15px;
+}
+.slider-img__01 {
+    width: 400px;
+    height: 200px;
+}
+.news {
+    margin-top: 250px;
+}
+.container-01 {
+    bottom: 0;
+}
+.slider-top02 {
+    display: block;
+}
+
+}
+@media screen and (max-width: 980px) {
+.footer-addres {
+    right: 0;
+}
+.news-block2 {
+    margin-left: 0;
+    margin-right: 0;
+}
+.footer-info {
+}
+.footer-contact {
+    right: 0;
+    margin-left: 0;
+}
+#nav {
+    padding-left: 0;
+}
+ul#nav li a {
+    font-size: 13px;
+}
+.slider-img__01 {
+    margin-left: 0;
+}
+.slider__text {
+    padding-right: 145px;
+    width: 200px;
+    text-align: left;
+    display: none;
+}
+.company__01 {
+    text-align: center;
+}
 }

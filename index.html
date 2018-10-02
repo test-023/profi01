@@ -11,7 +11,7 @@
  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700|Raleway&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 </head>
 <body> 
-<header>
+<header class="header--flex">
     <nav class="top-menu__nav">
         <div class="logo"><a href=""><img src="img/logo.png" style="width: 188px;height: 46px;" alt="Логотип компании"></a></div>
         <ul id="nav">
@@ -53,6 +53,42 @@
 	</li>
 </ul>
     </nav>
+    <div class="menu">
+    <div class="menu__icon">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  
+    <div class="menu__links">
+        <a class="menu__links-item">О Компании</a>
+        <ul class="sub-menu-001">
+            <li><a href="#">Знакомство с компанией</a></li>
+            <li><a href="#">Обращение Управляющего Партнера</a></li>
+            <li><a href="#">Филиалы</a></li>
+            <li><a href="#">Карьера</a></li>
+        </ul>
+        <a class="menu__links-item">Практики</a>
+        <ul class="sub-menu-001">
+            <li><a href="">Абонентское юридическое<br>сопровождение</a></li>
+            <li><a href="">Корпоративное управление</a></li>
+            <li><a href="">Правовой аудит (Due diligence).<br> Приобретение активов.</a></li>
+            <li><a href="">Сделки. Договорная практика.</a></li>
+            <li><a href="">Земля. Недвижимость.<br> Строительство.</a></li>
+            <li><a href="">Частные клиенты</a></li>
+            <li><a href="">Интеллектуальная собственность</a></li>
+            <li><a href="">Частные клиенты</a></li>
+            <li><a href="">Налогообложение</a></li>
+            <li><a href="">Антимонопольное регулирование</a></li>
+            <li><a href="">Трудовые споры</a></li>
+            <li class="submenu-bottom"><a href="">Банковская и финансовая практика</a></li>
+        </ul>
+        <a class="menu__links-item">Команда</a>
+        <a class="menu__links-item">Пресс-центр</a>
+        <a class="menu__links-item">Контакты</a>
+    </div>
+</div>
 </header>
 <main>
     <section class="slider-top">
@@ -67,10 +103,30 @@
     <section class="company">
         <div class="container">
         <h1 class="company-title">Элко Профи</h1>
+        <section class="slider-top02">
+                <div class="container"> 
+                    <div class="slider">
+                        <div class="slide"><div class="company__01">
+                <p>Наше <span class="company-red"> стратегическое мышление </span>  - <br>залог вашего успехa</p>
+                <div class="company-flex"><span class="company-red__big  company-red__big01">3391</span><span class="company--big__after01">спланированных сдело за год</span></div> 
+                <p class=""><span class="company-red">Креативный подход</span> к <br> поставленной задаче позволяет <br> решить самый сложный вопрос</p></div></div>
+                        <div class="slide">
+                            <div class="company-comand">
+                                <p>Команда профессионалов, практикующих в различных сферах права. Наши глубокие экспертные знания, креативный и стратегический подход позволяют эффективно решать поставленные вопросы с высокой степенью качества. Накопленный нами опыт совместной работы позволяет оказывать широкий спектр юридических услуг: от реализации отдельных проектов до полного сопровождения бизнеса.</p>
+                            </div>
+                        </div>
+                        <div class="slide"><div class="company__02">
+                <div class="company-flex"><span class="company-red__big company-red__big02">9</span><span class="company--big__after02">лет успешной работы</span></div>
+                <p class="company__02--width">Мы гарантируем оказать <br> <span class="company-red">качественную услугу</span> на достойном уровне.</p>
+                <div class="company-flex"><span class="company-red__big company-red__big03">92%</span><span class="company--big__after03">выигранных дел в среднем за год</span></div>
+            </div></div>
+                    </div>
+                </div>
+        </section>
         <div class="container-01">
             <div class="company__01">
                 <p>Наше <span class="company-red"> стратегическое мышление </span>  - <br>залог вашего успехa</p>
-                <div class="company-flex"><span class="company-red__big">3391</span><span class="company--big__after01">спланированных сдело за год</span></div>            
+    <div class="company-flex"><span class="company-red__big">3391</span><span class="company--big__after01">спланированных сдело за год</span></div>            
                 <p><span class="company-red">Креативный подход</span> к <br> поставленной задаче позволяет <br> решить самый сложный вопрос</p>
             </div>
             <div class="company-comand">
@@ -124,14 +180,31 @@ $('.slider').slick({
   infinite: true,
   speed: 500,
   autoplay: true,
-  autoplaySpeed: 5500,
+  autoplaySpeed: 550000,
   slidesToShow: 1,
   adaptiveHeight: true,
   arrows: false
 });
 </script>
+<script>
+(function($){
+  $(function() {
+    $('.menu__icon').on('click', function() {
+      $(this).closest('.menu')
+        .toggleClass('menu_state_open');
+    });
+    
+    $('.menu__links-item').on('click', function() {
+      // do something
+
+      $(this).closest('.menu')
+        .removeClass('menu_state_open');
+    });
+  });
+})(jQuery);
+</script>
 </body>
-<footer>
+<footer class="footer-flex">
 <div class="container">
     <div class="container-03">
     <div class="footer-addres">
@@ -147,6 +220,21 @@ $('.slider').slick({
         <p>© 2009-2018 ООО</p>
         <p>Юридическая фирма "ЭЛКО профи"</p>
     </div>
+    </div>
+    <div class="container-04">
+        <div class="footer-contact">
+            <p class="footer-contact__h1"><a href="">Связаться с нами</a></p>
+            <p>+7 (495) 640-77-03</p>
+            <p>elko@elko-profi.ru</p>
+        </div>
+        <div class="footer-addres">
+            <p class="footer-contact__h1"><a href="">Контакты</a></p>
+            <p>г. Москва, Ермолаевский переулок,<br>д. 27, офис 510</p>
+        </div>
+        <div class="footer-info-02">
+            <p>© 2009-2018 ООО</p>
+            <p>Юридическая фирма "ЭЛКО профи"</p>
+        </div>
     </div>
 </div>
 </footer>
