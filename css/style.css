@@ -1163,6 +1163,7 @@ animated buttons - animate the text inside prev and next buttons
     height: 100%;
     opacity: 0.95;
     background-color: #e8e8e8;
+    padding-top: 55px;
 }
 .slider-top02{
     display: none;
@@ -1182,6 +1183,10 @@ animated buttons - animate the text inside prev and next buttons
 }
 .news-block__info {
     display: none;
+}
+.news-block__date {
+    margin-top: 50px;
+    margin-bottom: -10px;
 }
 }
 @media screen and (max-width: 480px) and (min-width: 420px) {
@@ -1209,7 +1214,10 @@ animated buttons - animate the text inside prev and next buttons
 .slick-slide img {
     margin-right: 0;
 }
-
+.news-block__date {
+    margin-top: 50px;
+    margin-bottom: -10px;
+}
 }
 @media screen and (max-width: 768px) {
 .menu__icon{
@@ -1372,6 +1380,9 @@ nav.top-menu__nav{
 }
 }
 @media screen and (max-width: 980px) {
+.company-comand {
+    padding-top: 12px;
+}
 .footer-contact__h2,
 .footer-contact__h01 {
     left: 25px;
