@@ -1094,6 +1094,7 @@ animated buttons - animate the text inside prev and next buttons
    height: 35px;
    position: relative;
    cursor: pointer;
+   z-index: 9999;
 }
 
 .menu__icon span {
@@ -1158,15 +1159,15 @@ animated buttons - animate the text inside prev and next buttons
 }
 
 .menu.menu_state_open .menu__links {
-  display: block;  
+    display: block;  
+    height: 100%;
+    opacity: 0.95;
+    background-color: #e8e8e8;
 }
 .slider-top02{
     display: none;
 }
 @media (max-width: 420px) {
-.news-block__info {
-    display: none;
-}
 .slick-slide img {
     margin-right: 110px;
 }
@@ -1179,6 +1180,9 @@ animated buttons - animate the text inside prev and next buttons
 .news-block {
     width: 230px;
 }
+.news-block__info {
+    display: none;
+}
 }
 @media screen and (max-width: 480px) and (min-width: 420px) {
 .company-title {
@@ -1188,7 +1192,8 @@ animated buttons - animate the text inside prev and next buttons
 .news {
 }
 .news-block__date {
-    margin-top: 40px;
+    margin-top: 45px;
+    margin-bottom: -10px;
 }
 .news-block__info {
     display: none;
@@ -1224,7 +1229,7 @@ nav.top-menu__nav{
     top: 20px;
     right: 0;
     left: 0;
-    margin-top: 52px;
+    margin-top: -20px;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1000;
     overflow: auto;
@@ -1234,7 +1239,7 @@ nav.top-menu__nav{
     display: block;
     padding: 10px 0;
     text-align: center;
-    color: #ffffff;
+    color: #000000;
 }
 .container-01,  
 .container-02,
@@ -1251,7 +1256,7 @@ nav.top-menu__nav{
     display: none;
 }
 .container-04 {
-    display: block;
+    display: flex;
     text-align: center;
 }
 .company--big__after01 {
@@ -1412,6 +1417,7 @@ ul#nav li a {
 }
 .footer-info-02 {
     margin-top: 35px;
+    text-align: center;
 }
 }
 @media screen and (max-width: 1230px) and (min-width: 980px) {
