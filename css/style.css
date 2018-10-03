@@ -1168,6 +1168,9 @@ animated buttons - animate the text inside prev and next buttons
 .slider-top02{
     display: none;
 }
+.footer-info-02 {
+    display: none;
+}
 @media (max-width: 420px) {
 .slick-slide img {
     margin-right: 110px;
@@ -1220,6 +1223,12 @@ animated buttons - animate the text inside prev and next buttons
 }
 }
 @media screen and (max-width: 768px) {
+.footer-info-02 {
+    display: block;
+}
+.footer-contact {
+    text-align: left;
+}
 .menu__icon{
     display: inline-block;
     right: 10px;
@@ -1299,6 +1308,8 @@ nav.top-menu__nav{
 .footer-contact__h1 {
     font-size: 15px;
     padding: 10px;
+    padding-left: 0;
+    font-weight: 600;
 }
 .company {
     display: block;
@@ -1385,8 +1396,9 @@ nav.top-menu__nav{
 }
 .footer-contact__h2,
 .footer-contact__h01 {
-    left: 25px;
     position: relative;
+    text-align: left;
+    padding-left: 25%;
 }
 .footer-info {
     left: 115px;
@@ -1407,6 +1419,7 @@ nav.top-menu__nav{
 .footer-contact {
     right: 0;
     margin-left: 0;
+    left: 5%;
 }
 .container-02 {
     display: block;
