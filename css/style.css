@@ -437,7 +437,6 @@ ul#nav li a:hover{
     margin: 0;
     padding: 0; /* Убираем отступы */
     padding: 20px;
-    margin-left: 90px;
     font-size: 17px;
     font-weight: 300;
    }
@@ -468,7 +467,7 @@ ul#nav li a:hover{
     height: 614px;
     background-color: #ffffff;
     box-shadow: 0 2px 11px 0 rgba(211, 211, 211, 0.5);
-    margin-left: 150px;
+    margin-left: 25px;
     margin-top: -115px;
     margin-bottom: 60px;
     display: flex;
@@ -477,7 +476,7 @@ ul#nav li a:hover{
 }
 .avatar{
     width: 356px;
-    height: 466px;
+    height: 448px;
     background-color: #d8d8d8;
     position: absolute;
     margin-left: 100px;
@@ -489,7 +488,7 @@ ul#nav li a:hover{
     position: relative;
 }
 .people__redline{
-    width: 667px;
+    /* width: 667px; */
     border: solid 0.5px #ac242a;
 }
 .arrow-top {
@@ -500,13 +499,14 @@ ul#nav li a:hover{
 }
 .people-info{
     background-color: #f9f9f9;
-    width: 810px;
+    max-width: 810px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    margin-left: 255px;
+    margin-left: 25px;
     font-size: 14px;
     color: #353535;
     margin-bottom: 60px;
+    padding: 15px;
 }
 .people__name{
     font-weight: 600;
@@ -541,6 +541,7 @@ ul#nav li a:hover{
 .company--block__comand{
     background-color: #ffffff;
     min-width: 353px;
+    max-width: 353px;
     height: 439px;
     box-shadow: 0 2px 8px 0 rgba(206, 206, 206, 0.5);
     margin-right: 75px;
@@ -575,7 +576,7 @@ ul#nav li a:hover{
 }
 .company--block{
     display: flex;
-    margin-left: 115px;
+    margin-left: 25px;
 }
 .contacts--container{
     display: flex;
@@ -585,13 +586,13 @@ ul#nav li a:hover{
     color: #ac242a;
     font-weight: 600;
     font-size: 25px;
-    margin-left: 115px;
+    margin-left: 25px;
     margin-bottom: 70px;
     padding: 0;
     margin-top: 0;  
 }
 .contacts--info {
-    margin-left: 185px;
+    margin-left: 40px;
 }
 .contact--yandexcart{
     margin-left: 150px;
@@ -600,8 +601,8 @@ ul#nav li a:hover{
     text-transform: uppercase;
     color: #ac242a;
     font-weight: 600;
-    font-size: 25px;
-    margin-left: 115px;
+    font-size: 38px;
+    margin-left: 25px;
     margin-bottom: 70px;
     padding: 0;
     margin-top: 0;
@@ -611,12 +612,10 @@ ul#nav li a:hover{
 }
 .news--press__list{
     list-style: none;
-    font-size: 16px;
+    font-size: 14px;
 }
 .news--press__list li {
     padding-bottom: 20px;
-    margin-left: 80px;
-
 }
 .news--press__list li a {
     color: grey;
@@ -639,7 +638,7 @@ ul#nav li a:hover{
     border-bottom: 2px solid #ac242a;
 }
 .greyline{
-    width: 733px;
+    max-width: 733px;
     border: solid 0.5px #dcdcdc;
     margin-top: 45px;
     margin-bottom: 45px;
@@ -652,7 +651,7 @@ ul#nav li a:hover{
    color: #ac242a;
    font-weight: 600;
    font-size: 25px;
-   margin-left: 115px;
+   margin-left: 25px;
    margin-bottom: 70px;
    padding: 0;
    margin-top: 0;
@@ -696,11 +695,12 @@ ul#nav li a:hover{
     font-size: 16px;
 }
 .info--company__section{
-    font-size: 20px;
-    margin-left: 100px;
+    font-size: 16px;
+    margin-left: 85px;
+    padding: 15px;
 }
 .info--company__easy {
-    font-weight: 400;
+    font-weight: 300;
 }
 .info--company__grey {
     font-weight: 500;
@@ -717,10 +717,11 @@ ul#nav li a:hover{
     font-weight: 600;
 }
 .info--company__date{
-    font-size: 25px;
+    font-size: 18px;
     color: grey;
 }
 .doveryy--box{
+    position:absolute;
     width: 401px;
     height: 480px;
     background-color: #ffffff;
@@ -728,6 +729,31 @@ ul#nav li a:hover{
     margin-left: 100px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    margin-bottom: 55px;
+    z-index: 99999;
+    opacity: 0;
+    transition: 1s;
+}
+.doveryy--box-01 {
+    position: relative;
+    width: 401px;
+    height: 289px;
+    margin-left: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-bottom: 55px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 7px 0 rgba(159, 159, 159, 0.5); 
+    margin-bottom: 55px;
+    z-index: 99998;
+}
+.doveryy--box:hover .doveryy--box-01 {
+    display: block;
+}
+.doveryy--box:hover {
+	opacity:1;
+    transition: 0.5s;
+    display: block;
 }
 .doveryy--box__img{
     width: 285px;
@@ -746,6 +772,9 @@ ul#nav li a:hover{
 .obzac,
 .obzac2{
     display: none;
+}
+.news-press__newstitile {
+    max-width: 565px;
 }
 /* Кнопки */
 .cd-pagination {
@@ -839,7 +868,6 @@ No space - remove distance between list items
 
 -------------------------------- */
 .cd-pagination.no-space {
-    width: 700px;
     max-width: none;
     display: inline-block;
     border-radius: 0.25em;
@@ -1171,7 +1199,18 @@ animated buttons - animate the text inside prev and next buttons
 .footer-info-02 {
     display: none;
 }
+.practices--left {
+    float: left;
+}
+.practices--right {
+    float: right;
+    position: relative;
+}
 @media (max-width: 420px) {
+.doveryy--right,
+.doveryy--left {
+    left: -3% !important;
+}
 .slick-slide img {
     margin-right: 110px;
 }
@@ -1191,8 +1230,43 @@ animated buttons - animate the text inside prev and next buttons
     margin-top: 50px;
     margin-bottom: -10px;
 }
+.practices--subtitletitle a {
+    font-size: 12px;
 }
-@media screen and (max-width: 480px) and (min-width: 420px) {
+.practices--description {
+    font-size: 12px;
+    width: 220px;
+}
+.practices--subtitletitle {
+    width: 145px;
+}
+.people--pages {
+    width: 250px !important;
+}
+.avatar {
+    margin-left: 0px !important;
+    width: 250px;
+    height: 250px;
+}
+.people--skills {
+    margin-top: 305px !important;
+}
+.arrow-bottom, .arrow-top {
+    padding-left: 165px !important;
+}
+.doveryy--box__img {
+    margin-left: 0;
+}
+.doveryy--box-01 {
+    width: 287px;
+    margin-bottom: 105px;
+}
+.doveryy--box {
+    width: 287px;
+    height: 557px;
+}
+}
+@media screen and (max-width: 480px) and (min-width: 420px) {L
 .company-title {
     font-size: 40px;
     padding-bottom: 25px;
@@ -1223,6 +1297,72 @@ animated buttons - animate the text inside prev and next buttons
 }
 }
 @media screen and (max-width: 768px) {
+.people--pages {
+    height: 100%;
+    width: auto;
+    display: block;
+}
+.avatar {
+    margin-left: 25px;
+    margin-top: 25px;
+}
+.people--skills {
+    margin-left: 8px;
+    margin-top: 530px;
+}
+.arrow-bottom, .arrow-top {
+    padding-left: 237px;
+}
+.company--block__comand {
+    margin-bottom: 105px;
+    min-width: 280px; 
+    max-width: 280px;  
+}
+.company--photo {
+    width: 250px;
+    margin-left: 30px;
+}
+.company--block {
+    display: block;
+    margin-left: 25px;
+}
+.contacts--container {
+    display: block;
+}
+.contact--yandexcart {
+    margin-left: 0px;
+}
+.greyline {
+    max-width: 320px;
+}
+.news-press__newstitile {
+    max-width: 320px;
+}
+.news-press__block {
+    margin-left: 25px;
+    margin-top: 55px;
+}
+.news--press__title {
+    font-size: 28px;
+}
+.breadcrumbs li {
+    font-size: 18px;
+}
+.practices--subtitletitle a {
+    font-size: 20px;
+}
+.practices--description {
+    font-size: 13px;
+    width: 220px;
+}
+.practices--right {
+    float: left;
+    right: 80px;
+}
+.practices--left {
+    right: 80px;
+    position: relative;
+}
 .footer-info-02 {
     display: block;
 }
@@ -1389,8 +1529,47 @@ nav.top-menu__nav{
     -ms-animation: none !important;
     animation: none !important;
 }
+.breadcrumbs {
+    margin-left: 0;
+}
+.news--press__list {
+    padding: 20px;
+}
+.info--company__section {
+    margin-left: 0;
+    padding: 15px;
+}
+.info--company__black {
+    padding: 20px;
+}
+.news--press__list li {
+    margin-left: 0;
+    padding-right: 5px;
+}
+.news-press__container {
+    display: block;
+}
 }
 @media screen and (max-width: 980px) {
+.people--pages {
+    max-width: 780px;
+}
+.block__coman03 {
+   margin-top: 90px;
+}
+.company--block__comand {
+    margin-right: 0px;
+}
+.company--block {
+    display: block;
+    margin-left: 25px;
+}
+.cd-pagination.no-space a {
+    font-size: 13px;
+}
+.cd-pagination li {
+    display: inline-block;
+}
 .company-comand {
     padding-top: 12px;
 }
@@ -1443,8 +1622,34 @@ ul#nav li a {
     margin-top: 35px;
     text-align: center;
 }
+.company--block__comand {
+    margin-right: 0;
+    margin-top: 105px;
+}
+.arrow-bottom, 
+.arrow-top {
+    padding-left: 285px;
+}
+}
+@media screen and (max-width: 1230px) {
+.doveryy--right,
+.doveryy--left {
+    float: left !important;
+    right: 75px;
+    left: 10%;
+}
 }
 @media screen and (max-width: 1230px) and (min-width: 980px) {
+.arrow-bottom, 
+.arrow-top {
+    padding-left: 285px;
+}
+.people--pages {
+    width: 780px;
+}
+.company--block__comand {
+    margin-right: 0px;
+}
 #nav {
     padding-left: 185px;
 }
